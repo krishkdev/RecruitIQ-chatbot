@@ -177,10 +177,84 @@ elif mode == "🔍 Gap Analysis":
         else:
             st.warning("Please fill in the job description and select a candidate.")
 
-# Chat message display
-for msg in st.session_state.messages:
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
+# ── Suggestion chips & welcome state ────────────────────────────────────────
+SUGGESTIONS = {
+    "💬 Recruiter Q&A": [
+        "Which candidates have production ML experience?",
+        "Who has the strongest Python background?",
+        "Find me candidates with startup experience",
+        "Who is the best fit for a backend role?",
+    ],
+    "🎯 Candidate Matching": [
+        "Show me top candidates for a Senior ML Engineer role",
+        "Who fits a Java backend position at a fintech?",
+        "Find candidates for an AI Research Scientist role",
+    ],
+    "🔍 Gap Analysis": [
+        "Analyze Wei Zhang against the ML Engineer JD",
+        "How does Carlos Mendez fit the backend role?",
+        "Run gap analysis on Aisha Patel",
+    ],
+}
+
+
+def _run_suggestion(suggestion, current_mode):
+    if current_mode == "🎯 Candidate Matching":
+        user_msg = f"**Find candidates for JD:**\n\n{suggestion}"
+        st.session_state.messages.append({"role": "user", "content": user_msg})
+        st.session_state.chat_history.add("user", user_msg, "matching")
+        with st.spinner("Thinking..."):
+            try:
+                matches = rag.match_candidates(suggestion, top_k=5)
+                rows = ["| Rank | Candidate | Score |", "|------|-----------|-------|"]
+                for i, m in enumerate(matches, 1):
+                    rows.append(f"| {i} | {m['candidate_name']} | {m['score']:.4f} |")
+                response = "\n".join(rows)
+            except Exception as e:
+                response = f"Error running candidate matching: {e}"
+        mode_key = "matching"
+    else:
+        # Q&A and Gap Analysis suggestions both resolve via recruiter_qa
+        mode_key = "qa" if current_mode == "💬 Recruiter Q&A" else "gap_analysis"
+        st.session_state.messages.append({"role": "user", "content": suggestion})
+        st.session_state.chat_history.add("user", suggestion, mode_key)
+        with st.spinner("Thinking..."):
+            try:
+                response = rag.recruiter_qa(suggestion)
+            except Exception as e:
+                response = f"Error: {e}"
+
+    st.session_state.messages.append({"role": "assistant", "content": response})
+    st.session_state.chat_history.add("assistant", response, mode_key)
+    st.rerun()
+
+
+# ── Chat area: welcome state or message history ──────────────────────────────
+if not st.session_state.messages:
+    st.markdown(
+        """
+        <div style="border:1px solid #800020;border-radius:8px;padding:16px 20px;
+        margin-bottom:20px;background:rgba(128,0,32,0.06);">
+        <p style="font-size:1.05rem;margin:0;">
+        Hello! I'm your ApplyAI Recruiting Assistant. Ask me anything about your
+        candidates and roles.
+        </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    suggestions = SUGGESTIONS[mode]
+    cols = st.columns(2)
+    for i, suggestion in enumerate(suggestions):
+        with cols[i % 2]:
+            if st.button(suggestion, key=f"welcome_chip_{i}", use_container_width=True):
+                _run_suggestion(suggestion, mode)
+
+else:
+    for msg in st.session_state.messages:
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
 
 # Q&A chat input — always at bottom, only in Recruiter Q&A mode
 if mode == "💬 Recruiter Q&A":
