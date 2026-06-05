@@ -42,6 +42,40 @@ with st.sidebar:
 
     st.divider()
 
+    # ── Corpus overview ──────────────────────────────────────────────────────
+    def _chip(label, bg_color):
+        return (
+            f'<span style="background:{bg_color};color:#fff;padding:2px 8px;'
+            f'border-radius:12px;font-size:0.75rem;margin:2px;display:inline-block;">'
+            f'{label}</span>'
+        )
+
+    resume_stems = sorted(
+        f.stem for f in Path("data/resumes").iterdir()
+        if f.suffix in (".txt", ".pdf")
+    ) if Path("data/resumes").exists() else []
+
+    jd_stems = sorted(
+        f.stem for f in Path("data/jds").iterdir()
+        if f.suffix == ".txt"
+    ) if Path("data/jds").exists() else []
+
+    with st.expander(f"👤 Candidates in Corpus ({len(resume_stems)})", expanded=False):
+        if resume_stems:
+            chips = " ".join(_chip(s.replace("_", " "), "#1a6b3c") for s in resume_stems)
+            st.markdown(chips, unsafe_allow_html=True)
+        else:
+            st.caption("No resumes found.")
+
+    with st.expander(f"📋 Job Descriptions ({len(jd_stems)})", expanded=False):
+        if jd_stems:
+            chips = " ".join(_chip(s.replace("_", " "), "#b45309") for s in jd_stems)
+            st.markdown(chips, unsafe_allow_html=True)
+        else:
+            st.caption("No JDs found.")
+
+    st.divider()
+
     st.markdown("**Past Sessions**")
     sessions = ChatHistory.list_sessions()
     if sessions:
