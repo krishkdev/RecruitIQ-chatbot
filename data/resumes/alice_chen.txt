@@ -1,0 +1,43 @@
+Alice Chen
+Senior Machine Learning Engineer
+alice.chen@email.com | linkedin.com/in/alicechen | github.com/alicechen
+
+SUMMARY
+Machine learning engineer with 7 years of experience building production ML systems at scale. Specializes in deep learning, NLP, and recommendation systems. Track record of taking models from research to production serving hundreds of millions of requests daily.
+
+EXPERIENCE
+
+Senior ML Engineer — Stripe, San Francisco (2021–Present)
+- Led fraud detection ML platform handling 2M+ transactions/day using gradient boosted trees and deep learning ensemble on GCP Vertex AI
+- Reduced false positive rate by 34% by introducing transformer-based sequence models for transaction pattern recognition
+- Architected real-time feature store using Feast + BigQuery, cutting feature engineering latency from 2 hours to 15 minutes
+- Mentored 4 junior engineers; drove adoption of MLflow for experiment tracking across 3 ML teams
+
+ML Engineer — Pinterest, San Francisco (2019–2021)
+- Built and maintained visual search ranking model (PyTorch + TorchServe) serving 60M monthly active users
+- Implemented distributed training pipeline on AWS using SageMaker, reducing training time by 65%
+- Designed A/B testing framework for ML model rollouts integrated with internal experimentation platform
+
+ML Engineer — Accenture AI Lab, Chicago (2017–2019)
+- Delivered NLP-based document classification system for Fortune 500 insurance client (scikit-learn + spaCy)
+- Built end-to-end data pipeline using Apache Spark and Airflow for processing 50GB/day of unstructured text
+
+SKILLS
+Languages: Python, SQL, Scala
+ML/DL: PyTorch, TensorFlow, XGBoost, LightGBM, Hugging Face Transformers, scikit-learn
+MLOps: MLflow, Kubeflow, Vertex AI, SageMaker, Docker, Kubernetes
+Cloud: GCP (Vertex AI, BigQuery, GCS), AWS (SageMaker, S3, EC2)
+Data: Apache Spark, Kafka, Feast, dbt, Airflow
+Other: FAISS, Pinecone, LangChain, Git, Terraform
+
+EDUCATION
+M.S. Computer Science (Machine Learning) — Carnegie Mellon University, 2017
+B.S. Statistics — University of Michigan, 2015
+
+PUBLICATIONS
+- "Efficient Fraud Detection at Scale Using Transformer Ensembles" — NeurIPS 2022 Workshop
+- "Real-Time Feature Stores for Production ML" — KDD 2021
+
+CERTIFICATIONS
+- Google Professional ML Engineer
+- AWS Certified Machine Learning Specialty

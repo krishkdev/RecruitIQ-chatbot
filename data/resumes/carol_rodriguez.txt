@@ -1,0 +1,50 @@
+Carol Rodriguez
+AI Research Scientist
+carol.rodriguez@email.com | linkedin.com/in/carolrodriguez | scholar.google.com/carol_rodriguez
+
+SUMMARY
+AI research scientist with 6 years of experience at the intersection of academic research and applied ML. Published 12 peer-reviewed papers in top venues (NeurIPS, ICML, ICLR, ACL). Expert in large language models, reinforcement learning from human feedback (RLHF), and multimodal learning. Experienced with PyTorch, JAX, and large-scale distributed training.
+
+EXPERIENCE
+
+Research Scientist — Cohere, Toronto (2022–Present)
+- Core contributor to Command R+ LLM training pipeline (RLHF, DPO, constitutional AI techniques)
+- Developed novel reward modeling approach that improved RLHF alignment by 18% on internal benchmarks
+- Led research on retrieval-augmented generation (RAG) for enterprise knowledge bases; shipped as production feature
+- Collaborated with engineering team to optimize distributed training on 512-GPU clusters using DeepSpeed + FSDP
+
+Research Scientist — Microsoft Research, Redmond (2020–2022)
+- Investigated sample efficiency in offline RL using conservative Q-learning (CQL) and IQL variants
+- Published "Efficient RLHF at Scale" at ICML 2022 (87 citations in 18 months)
+- Built evaluation harness for LLM safety benchmarks (TruthfulQA, BBH, HellaSwag) open-sourced on GitHub
+
+ML Research Engineer — Salesforce AI Research, Palo Alto (2018–2020)
+- Developed CodeT5 fine-tuning pipeline for code summarization and generation tasks
+- Implemented sequence-to-sequence pre-training on 100GB+ code corpus using distributed training on 64 V100 GPUs
+- Contributed to BLIP multimodal model (vision-language pre-training)
+
+SKILLS
+Research: Large Language Models, RLHF, DPO, RAG, Multimodal Learning, Offline RL
+Frameworks: PyTorch, JAX/Flax, HuggingFace Transformers, DeepSpeed, FSDP, Megatron-LM
+Languages: Python, CUDA (basic), LaTeX, R
+ML Tools: Weights & Biases, MLflow, SLURM, Ray
+Cloud: AWS (EC2, S3, SageMaker), GCP (TPU, Vertex AI)
+Other: FAISS, LangChain, LlamaIndex, Git
+
+EDUCATION
+Ph.D. Computer Science (AI/ML) — Stanford University, 2018
+Advisors: Prof. Christopher Manning, Prof. Chelsea Finn
+Thesis: "Grounded Language Acquisition Through Interaction"
+
+B.S. Mathematics & Computer Science — MIT, 2013
+
+PUBLICATIONS (selected)
+- "Efficient RLHF at Scale" — ICML 2022
+- "RAG for Enterprise: Lessons from Production" — ACL 2023
+- "Grounded Language Models via Embodied Pre-training" — NeurIPS 2021
+- "Sample-Efficient Offline RL with Conservative Value Estimates" — ICLR 2021
+(12 total publications, 450+ citations)
+
+AWARDS
+- Best Paper Award — ACL 2023 (Industry Track)
+- NSF Graduate Research Fellowship, 2014–2017

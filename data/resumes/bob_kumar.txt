@@ -1,0 +1,45 @@
+Bob Kumar
+Senior Backend Engineer
+bob.kumar@email.com | linkedin.com/in/bobkumar | github.com/bobkumar
+
+SUMMARY
+Backend engineer with 8 years of experience designing and scaling distributed systems. Expert in API design, microservices, and cloud-native infrastructure. Passionate about reliability, observability, and developer productivity. Strong background in Python and Go.
+
+EXPERIENCE
+
+Senior Backend Engineer — Databricks, San Francisco (2022–Present)
+- Designed and implemented REST and gRPC APIs for the Databricks Jobs service, supporting 50K+ enterprise customers
+- Led migration of monolithic job scheduler to event-driven microservices architecture (Go + Kafka), improving throughput by 4x
+- Built internal platform SDK in Python and Go used by 200+ engineers for service scaffolding and deployment
+- Drove SLO definition and alerting strategy using Prometheus + Grafana, achieving 99.95% uptime
+
+Backend Engineer — Lyft, San Francisco (2019–2022)
+- Owned pricing and surge service (Python + FastAPI) processing 500K requests/min during peak hours
+- Redesigned database sharding strategy for PostgreSQL cluster (1TB+), cutting query p99 latency from 400ms to 45ms
+- Implemented circuit breaker and retry patterns using Resilience4j, reducing cascading failure incidents by 80%
+- Contributed to internal ML platform backend for model serving (Triton Inference Server integration)
+
+Software Engineer — Thoughtworks, Bangalore (2016–2019)
+- Built RESTful microservices for e-commerce client using Java Spring Boot and AWS (ECS, RDS, SQS)
+- Introduced contract testing with Pact, eliminating integration regressions between 12 services
+- Automated CI/CD pipelines using Jenkins and Terraform, reducing deployment time from 2 hours to 15 minutes
+
+SKILLS
+Languages: Python, Go, Java, SQL
+Frameworks: FastAPI, Django, gRPC, Spring Boot
+Databases: PostgreSQL, MySQL, Redis, Cassandra, DynamoDB
+Cloud: AWS (EC2, ECS, RDS, SQS, S3, Lambda), GCP (GKE, Cloud Run, Pub/Sub)
+Infrastructure: Kubernetes, Docker, Terraform, Helm, Istio
+Observability: Prometheus, Grafana, Datadog, OpenTelemetry, Jaeger
+Other: Kafka, RabbitMQ, Celery, Airflow, Git, GitHub Actions
+
+EDUCATION
+B.Tech Computer Science — IIT Bombay, 2016
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect — Professional
+- Certified Kubernetes Application Developer (CKAD)
+
+OPEN SOURCE
+- Contributor to FastAPI (type hint improvements, middleware docs)
+- Author of `pybatcher` — async request batching library (1.2K GitHub stars)

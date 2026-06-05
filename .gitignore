@@ -1,0 +1,27 @@
+# Environment
+.env
+
+# FAISS indexes (built at runtime)
+faiss_store/
+
+# Chat session logs (runtime data)
+chat_logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

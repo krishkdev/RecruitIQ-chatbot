@@ -1,0 +1,34 @@
+Senior Machine Learning Engineer — ApplyAI
+
+ABOUT THE ROLE
+ApplyAI is looking for a Senior ML Engineer to join our Core Intelligence team. You will design, train, and ship production ML models that power our candidate-matching and job-recommendation products serving 3M+ job seekers. You will own the full ML lifecycle — from feature engineering to model deployment and monitoring.
+
+RESPONSIBILITIES
+- Design and implement ML models for candidate ranking, job recommendation, and skill extraction
+- Build scalable ML infrastructure on GCP (Vertex AI, BigQuery ML, Cloud Run)
+- Lead adoption of MLOps best practices: experiment tracking, model registry, automated retraining pipelines
+- Collaborate with product and data teams to define metrics and run A/B tests
+- Mentor junior ML engineers and contribute to technical roadmap
+- Stay current with LLM and embedding model advances; evaluate and integrate new techniques
+
+REQUIREMENTS
+- 5+ years of industry experience as an ML Engineer
+- Strong hands-on experience with PyTorch and/or TensorFlow for model development
+- Production experience deploying and monitoring ML models at scale
+- Proficiency with GCP services: Vertex AI, BigQuery, GCS, Cloud Run
+- Experience with fraud detection, ranking systems, or recommendation systems is a strong plus
+- Solid Python skills; familiarity with SQL and distributed data processing (Spark or BigQuery)
+- Experience with feature stores (Feast or similar) and MLflow or Kubeflow
+- Strong communication skills; ability to translate business problems into ML solutions
+
+NICE TO HAVE
+- Experience with LLMs, embeddings, RAG, or vector search (FAISS, Pinecone)
+- Publications or open-source contributions in ML
+- Experience with RLHF or fine-tuning large language models
+
+TECH STACK
+Python, PyTorch, GCP (Vertex AI, BigQuery), MLflow, Kubeflow, Feast, FAISS, Docker, Kubernetes, Airflow
+
+COMPENSATION
+$200K–$260K base + equity + benefits
+San Francisco, CA (hybrid 3 days/week) or Remote (US)

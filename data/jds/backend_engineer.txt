@@ -1,0 +1,34 @@
+Senior Backend Engineer — ApplyAI
+
+ABOUT THE ROLE
+ApplyAI's Platform Engineering team is hiring a Senior Backend Engineer to help us scale our API and data infrastructure. You will design and own critical backend services that handle millions of resume submissions, job applications, and real-time matching events every day. This is a high-impact role with significant autonomy and ownership.
+
+RESPONSIBILITIES
+- Design, build, and own core backend services using Python (FastAPI) and Go
+- Lead backend architecture for our real-time application tracking and notification systems
+- Scale PostgreSQL and Redis infrastructure to support 10x user growth
+- Build and maintain internal APIs consumed by web, mobile, and ML teams
+- Define and enforce SLOs; lead incident response and postmortems
+- Drive engineering best practices: code review, testing standards, observability
+
+REQUIREMENTS
+- 5+ years of backend engineering experience
+- Expert-level Python skills; experience with FastAPI or Django REST Framework
+- Strong proficiency in Go or Java for performance-critical services
+- Deep knowledge of relational databases (PostgreSQL); experience with database sharding, indexing, and query optimization
+- Production experience with AWS or GCP cloud services
+- Experience with message queues (Kafka, SQS, RabbitMQ) and async task processing
+- Solid understanding of distributed systems concepts: CAP theorem, eventual consistency, circuit breakers
+- Experience with containerization (Docker) and orchestration (Kubernetes)
+
+NICE TO HAVE
+- Experience with ML model serving infrastructure (Triton, TorchServe, or similar)
+- Contributions to open-source projects
+- Experience building developer platforms or internal tooling at scale
+
+TECH STACK
+Python (FastAPI), Go, PostgreSQL, Redis, Kafka, AWS (ECS, RDS, SQS, S3), Kubernetes, Terraform, Prometheus, Grafana, Datadog
+
+COMPENSATION
+$180K–$230K base + equity + benefits
+San Francisco, CA (hybrid) or Remote (US/Canada)
